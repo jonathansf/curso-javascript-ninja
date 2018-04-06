@@ -92,7 +92,7 @@ Mostre no console todas as propriedades e valores de todos os livros,
 no formato abaixo:
     "[PROPRIEDADE]: [VALOR]"
 */
-for(var i = 0; i < Object.keys(books).length; i++){
+for(var i = 0; i < Object.length; i++){
     for(var prop in books[i]){
         console.log(prop + ': ' + books[i][prop]);
     }
@@ -105,7 +105,7 @@ seu nome. Adicione seu nome completo no array.
 // ?
 console.log( '\nMeu nome é:' );
 
-var myName = [ 'j','o','n','a','t','h','a','n',' ','s','a','n','t','i','a','g','o',' ','f','r','a','n','c','i','s','c','o']
+var myName = [ 'j','o','n','a','t','h','a','n']
 
 /*
 Juntando todos os itens do array, mostre no console seu nome.
@@ -113,13 +113,14 @@ Juntando todos os itens do array, mostre no console seu nome.
 // ?
 
 console.log( '\nMeu nome invertido é:' );
-myName.reverse();
+console.log(myName.reverse().join(''))
+
 /*
 Ainda usando o objeto acima, mostre no console seu nome invertido.
 */
-console.log(myName)
 
 console.log( '\nAgora em ordem alfabética:' );
+myName.reverse();
 /*
 Mostre todos os itens do array acima, odenados alfabéticamente.
 */
@@ -128,4 +129,4 @@ console.log(myName.sort())
 
 
 
-})
+})  
